@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+    <link rel="stylesheet" href="order.css">
+    
+
+</head>
+
+<body>
+    <header>
+        <h1>Your Orders</h1>
+        <button id="order" onclick="showOrderPopup()">Order</button>
+        
+    </header>
+
+    <nav>
+        <a href="userhome.html">Home</a>
+        <a href="pending.html">My Pending Works</a>
+        <a href="skillsets.html">My Skillsets</a>
+        <a href="orders.html">My Orders</a>
+        <a href="transactions.html">Transactions</a>
+        <a href="../home.html">Logout</a>
+    </nav>
+
+    <main>
+        <section id="order-history">
+            <h2>Order History</h2>
+            <!-- Empty order list for now -->
+            <div id="order-list"></div>
+        </section>
+    </main>
+
+
+    <!-- Popup Form -->
+    <div id="order-popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close-btn" onclick="hidePopup()">&times;</span>
+            <h3>Place New Order</h3>
+            <form id="order-form">
+                <label for="title">Title</label>
+                <input type="text" id="title" required>
+    
+                <label for="description">Description</label>
+                <textarea id="description" required></textarea>
+    
+                <label for="category">Category</label>
+                <input type="text" id="category" required>
+    
+                <label for="price">Price</label>
+                <input type="number" id="price" required>
+    
+                <label for="location">Location</label>
+                <input type="text" id="location" required>
+    
+                <button type="submit">Submit Order</button>
+            </form>
+
+            <div id="orderDetails"></div> <!-- This will display the placed order details -->
+    
+            <button onclick="hidePopup()">Close</button>
+        </div>
+    </div>
+
+    <div id="user-orders">
+        <h3>Your Orders</h3>
+        <div id="order-list"></div> <!-- This will be populated dynamically with user's orders -->
+    </div>
+    
+
+    <script src="orders.js"></script>
+    
+    <footer>
+        <p>&copy; 2024 Neighborhood Skill Exchange Platform</p>
+    </footer>
+</body>
+
+</html>

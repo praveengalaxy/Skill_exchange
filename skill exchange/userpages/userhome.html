@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Home</title>
+    <link rel="stylesheet" href="userhome.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Dashboard</h1>
+    </header>
+    <nav>
+        <a href="userhome.html">Home</a>
+        <a href="pending.html">My Pending Works</a>
+        <a href="skillsets.html">My Skillsets</a>
+        <a href="orders.html">My Orders</a>
+        <a href="transactions.html">Transactions</a>
+        <a href="../home.html">Logout</a>
+    </nav>
+    <main>
+        <section id="available-works">
+            <h2>Available Works</h2>
+            <!-- Available works will be populated dynamically here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Neighborhood Skill Exchange Platform</p>
+    </footer>
+
+    <!-- Popup for showing details (if needed) -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close-btn" onclick="hidePopup()">&times;</span>
+            <h3 id="popup-title"></h3>
+            <p id="popup-description"></p>
+            <p><strong>Ordered By:</strong> <span id="popup-ordered-by"></span></p>
+            <p><strong>Location:</strong> <span id="popup-location"></span></p>
+        </div>
+    </div>
+
+    <script src="userhome.js"></script>
+</body>
+</html>

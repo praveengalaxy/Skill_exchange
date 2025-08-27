@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginstyle.css">
+    <title>Login/Register</title>
+</head>
+<body>
+    <header>
+        <h1>Login or Register</h1>
+        <div id="navigation">
+            <a href="home.html">Home</a>
+            <a href="help.html">Help</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+    </nav>
+
+    <main>
+        <h2>Welcome Back!</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <!-- Register-specific fields hidden initially -->
+            <div id="emailField" style="display: none;">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+            </div>
+
+            <div id="phoneField" style="display: none;">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone"><br>
+            </div>
+
+            <div id="addressFields" style="display: none;">
+                <label for="streetAddress">Street Address:</label>
+                <input type="text" id="streetAddress" name="streetAddress"><br>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city"><br>
+
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state"><br>
+
+                <label for="postalCode">Postal Code:</label>
+                <input type="text" id="postalCode" name="postalCode"><br>
+            </div>
+
+            <button type="submit" id="submitButton">Login</button>
+        </form>
+
+        <p>Don't have an account? <a href="#" id="registerLink">Register here</a>.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Neighborhood Skill Exchange Platform</p>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

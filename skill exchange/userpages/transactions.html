@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
+    <link rel="stylesheet" href="userhome.css">
+</head>
+
+<body>
+    <header>
+        <h1>Your Transactions</h1>
+    </header>
+
+    <nav>
+        <a href="userhome.html">Home</a>
+        <a href="pending.html">My Pending Works</a>
+        <a href="skillsets.html">My Skillsets</a>
+        <a href="orders.html">My Orders</a>
+        <a href="transactions.html">Transactions</a>
+        <a href="../home.html">Logout</a>
+    </nav>
+
+    <main>
+        <section id="transaction-history">
+            <h2>Transaction History</h2>
+            <div id="transactions-container">
+                <!-- Transactions will be dynamically added here -->
+            </div>
+            <div id="popup" class="hidden">
+                <div class="popup-content">
+                    <h3 id="popup-title"></h3>
+                    <p id="popup-description"></p>
+                    <p id="popup-ordered-by"></p>
+                    <p id="popup-location"></p>
+                    <p id="popup-phone"></p>
+                    <p id="popup-amount"></p>
+                    <button onclick="hidePopup()">Close</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Neighborhood Skill Exchange Platform</p>
+    </footer>
+
+    <script src="transaction.js"></script>
+</body>
+</html>

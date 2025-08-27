@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skillsets</title>
+    <link rel="stylesheet" href="userhome.css">
+    <link rel="stylesheet" href="navstyle.css">
+    <link rel="stylesheet" href="skillsets.css">
+</head>
+
+<body>
+    <header>
+        <h1>Your Skillsets</h1>
+    </header>
+
+    <nav>
+        <a href="userhome.html">Home</a>
+        <a href="pending.html">My Pending Works</a>
+        <a href="skillsets.html">My Skillsets</a>
+        <a href="orders.html">My Orders</a>
+        <a href="transactions.html">Transactions</a>
+        <a href="../home.html">Logout</a>
+    </nav>
+
+    <main>
+        <section id="current-skills">
+            <h2>Current Skills</h2>
+            <ul id="skills-list">
+                <!-- Skills will be dynamically loaded here -->
+            </ul>
+        </section>
+        <section>
+        <form id="addSkillForm">
+            <input type="text" id="skillName" placeholder="Skill Name" required>
+            <input type="text" id="proficiency" placeholder="Proficiency Level" required>
+            <input type="number" id="yearsOfExperience" placeholder="Years of Experience" required>
+            <button type="submit">Add Skill</button>
+        </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Neighborhood Skill Exchange Platform</p>
+    </footer>
+
+    <script src="skillsets.js"></script>
+</body>
+
+</html>

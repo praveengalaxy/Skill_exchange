@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="App.css">
+    <style>
+        /* Add your CSS styles or import App.css */
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!---<div id="cartoonimg"><img src="Daco_4505542.png" alt=""></div> --->
+        <div class="navbar">
+            <div class="logo">Neighborhood Skill Exchange Platform</div>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+            </div>
+        </div>
+        <div class="navitems  navbar">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div id="home">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to the Skill exchange platform</h1>
+                <!-- <p>Connecting Skills, Empowering Communities</p>
+                <a href="role-selection.html" class="primary-btn">Get Started</a> -->
+            </div>
+        </section>
+    </div>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            The Neighborhood Skill Exchange Platform is a community-driven initiative aimed at fostering
+            collaboration and knowledge sharing. We believe everyone has unique skills and talents to offer, and our
+            platform bridges the gap between learners and teachers within neighborhoods.
+        </p>
+        <p>
+            The Neighborhood Skill Exchange Platform is an innovative, community-driven initiative designed to empower
+            individuals by fostering collaboration, learning, and knowledge sharing within their local neighborhoods. It
+            is built on the belief that everyone possesses unique skills and talents, which, when shared, can create a
+            thriving ecosystem of mutual growth and development. The platform bridges the gap between learners and
+            teachers by connecting those eager to acquire new skills with individuals who have the expertise to teach
+            them
+        </p>
+        <p>
+            Whether it’s learning a language, mastering a craft, developing technical skills, or enhancing professional
+            abilities, the platform provides a space for people to come together and exchange knowledge. By focusing on
+            local neighborhoods, the initiative strengthens community bonds, encourages collaboration, and promotes a
+            culture of learning and sharing. It aims to transform neighborhoods into vibrant hubs of growth, where
+            individuals support each other in their journeys of personal and professional development.
+        </p>
+       <!---- <button class="btn-know-more" onclick="location.href='about.html'">Know More</button>--->
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Skill Sharing and Learning</li>
+            <li>Mentorship Programs</li>
+            <li>Community Projects and Collaboration</li>
+            <li>Event and Workshop Management</li>
+        </ul>
+        <!-- <button class="btn-know-more" onclick="location.href='services.html'">See More</button> -->
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@nsep.com</p>
+        <p>Phone: +123-456-7890</p>
+
+        <h3>Our Location:</h3>
+        <p>RV College of Engineering, Mysore Road, Bangalore, Karnataka, 560059, India</p>
+    </section>
+
+    <script>
+        // Dynamic background slideshow
+        const images = [
+            "/images/im1.jpg",
+            "/images/im11.jpg",
+            "/images/im12.jpg",
+            "/images/im4.jpg",
+            "/images/im5.jpg",
+            "/images/im6.jpg",
+            "/images/im8.jpg",
+            "/images/im9.jpg"
+        ];
+        let currentImageIndex = 0;
+        setInterval(() => {
+            document.getElementById("home").style.backgroundImage = `url(${images[currentImageIndex]})`;
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+        }, 2000);
+    </script>
+</body>
+
+</html>

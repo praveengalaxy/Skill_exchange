@@ -1,0 +1,29 @@
+/* navstyle.css */
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #007bff; /* Bootstrap primary color */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Spacing around links */
+    font-size: 16px; /* Font size */
+}
+
+nav a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav a.active {
+    background-color: #0056b3; /* Active link color */
+    font-weight: bold; /* Bold text for active link */
+}
